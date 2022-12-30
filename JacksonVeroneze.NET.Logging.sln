@@ -1,10 +1,7 @@
-﻿
-Microsoft Visual Studio Solution File, Format Version 12.00
+﻿Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JacksonVeroneze.NET.Logging", "src\JacksonVeroneze.NET.Logging\JacksonVeroneze.NET.Logging.csproj", "{6098FA72-7D24-4222-9BFE-5FEBC03392B2}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{C6894A70-D8A0-4914-86D2-F0FBE51EF319}"
 	ProjectSection(SolutionItems) = preProject
 		.editorconfig = .editorconfig
@@ -19,7 +16,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{0BF64F87
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "samples", "samples", "{7E085D4F-B628-47A4-ACAC-F5530ABEE3C0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Logging.Api", "samples\Logging.Api\Logging.Api.csproj", "{EE8E379F-CE9D-413E-AD5D-D7A19C0198CB}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JacksonVeroneze.NET.Logging", "src\JacksonVeroneze.NET.Logging\JacksonVeroneze.NET.Logging.csproj", "{3DD65E2E-72B3-4FE3-A69B-0A16E391B68C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Logging.Api", "samples\Logging.Api\Logging.Api.csproj", "{CB64EC4E-29B1-4F68-A34C-FD7A2A28E75A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -30,27 +29,17 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{6098FA72-7D24-4222-9BFE-5FEBC03392B2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{6098FA72-7D24-4222-9BFE-5FEBC03392B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{6098FA72-7D24-4222-9BFE-5FEBC03392B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{6098FA72-7D24-4222-9BFE-5FEBC03392B2}.Release|Any CPU.Build.0 = Release|Any CPU
-		{40161314-AD0E-489D-BD48-6B5AFC22E88B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{40161314-AD0E-489D-BD48-6B5AFC22E88B}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{40161314-AD0E-489D-BD48-6B5AFC22E88B}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{40161314-AD0E-489D-BD48-6B5AFC22E88B}.Release|Any CPU.Build.0 = Release|Any CPU
-		{4CB628B0-584C-4D53-9735-8A49287F6D4A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{4CB628B0-584C-4D53-9735-8A49287F6D4A}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{4CB628B0-584C-4D53-9735-8A49287F6D4A}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{4CB628B0-584C-4D53-9735-8A49287F6D4A}.Release|Any CPU.Build.0 = Release|Any CPU
-		{EE8E379F-CE9D-413E-AD5D-D7A19C0198CB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{EE8E379F-CE9D-413E-AD5D-D7A19C0198CB}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{EE8E379F-CE9D-413E-AD5D-D7A19C0198CB}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{EE8E379F-CE9D-413E-AD5D-D7A19C0198CB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3DD65E2E-72B3-4FE3-A69B-0A16E391B68C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3DD65E2E-72B3-4FE3-A69B-0A16E391B68C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3DD65E2E-72B3-4FE3-A69B-0A16E391B68C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3DD65E2E-72B3-4FE3-A69B-0A16E391B68C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CB64EC4E-29B1-4F68-A34C-FD7A2A28E75A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CB64EC4E-29B1-4F68-A34C-FD7A2A28E75A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CB64EC4E-29B1-4F68-A34C-FD7A2A28E75A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CB64EC4E-29B1-4F68-A34C-FD7A2A28E75A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{6098FA72-7D24-4222-9BFE-5FEBC03392B2} = {01139357-8F5D-4F33-9CD8-1685F30737B3}
-		{40161314-AD0E-489D-BD48-6B5AFC22E88B} = {0BF64F87-41E0-4A7E-92AD-CF5021E22352}
-		{4CB628B0-584C-4D53-9735-8A49287F6D4A} = {0BF64F87-41E0-4A7E-92AD-CF5021E22352}
-		{EE8E379F-CE9D-413E-AD5D-D7A19C0198CB} = {7E085D4F-B628-47A4-ACAC-F5530ABEE3C0}
+		{3DD65E2E-72B3-4FE3-A69B-0A16E391B68C} = {01139357-8F5D-4F33-9CD8-1685F30737B3}
+		{CB64EC4E-29B1-4F68-A34C-FD7A2A28E75A} = {7E085D4F-B628-47A4-ACAC-F5530ABEE3C0}
 	EndGlobalSection
 EndGlobal

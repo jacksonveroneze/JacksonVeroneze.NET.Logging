@@ -1,0 +1,1 @@
+# JacksonVeroneze.NET.Logging
