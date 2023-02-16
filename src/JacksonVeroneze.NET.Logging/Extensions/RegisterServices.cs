@@ -15,14 +15,15 @@ public static class RegisterServices
         this IHostBuilder host,
         Action<LoggingConfiguration> action)
     {
-        host.UseSerilog((hostingContext, _, loggerConfiguration) =>
+        host.UseSerilog((hostingContext, services, loggerConfiguration) =>
         {
             LoggingConfiguration optionsConfig = new();
 
             action.Invoke(optionsConfig);
 
-            loggerConfiguration.ReadFrom.Configuration(
-                    hostingContext.Configuration)
+            loggerConfiguration
+                .ReadFrom.Configuration(hostingContext.Configuration)
+                .ReadFrom.Services(services)
                 .ConfigureLogger(optionsConfig);
         });
 
