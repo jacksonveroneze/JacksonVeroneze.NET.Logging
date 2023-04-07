@@ -4,7 +4,6 @@ using Microsoft.Extensions.Hosting;
 using Serilog;
 using Serilog.Enrichers.Span;
 using Serilog.Exceptions;
-using Serilog.Sinks.SystemConsole.Themes;
 
 namespace JacksonVeroneze.NET.Logging.Extensions;
 
@@ -24,29 +23,10 @@ public static class RegisterServices
             loggerConfiguration
                 .ReadFrom.Configuration(hostingContext.Configuration)
                 .ReadFrom.Services(services)
-                .ConfigureLogger(optionsConfig);
+                .ConfigureEnrich(optionsConfig);
         });
 
         return host;
-    }
-
-    private static LoggerConfiguration ConfigureLogger(
-        this LoggerConfiguration loggerConfiguration,
-        LoggingConfiguration optionsConfig)
-    {
-        loggerConfiguration.ConfigureEnrich(optionsConfig);
-
-        if (optionsConfig.Console?.IsEnable ?? false)
-        {
-            loggerConfiguration.WriteConsole();
-        }
-
-        if (optionsConfig.Splunk?.IsEnable ?? false)
-        {
-            loggerConfiguration.WriteSplunk(optionsConfig);
-        }
-
-        return loggerConfiguration;
     }
 
     private static LoggerConfiguration ConfigureEnrich(
@@ -63,31 +43,6 @@ public static class RegisterServices
             .Enrich.WithSpan()
             .Enrich.WithProperty("ApplicationName", optionsConfig.ApplicationName)
             .Enrich.WithProperty("ApplicationVersion", optionsConfig.ApplicationVersion);
-
-        return loggerConfiguration;
-    }
-
-    private static LoggerConfiguration WriteConsole(
-        this LoggerConfiguration loggerConfiguration)
-    {
-        loggerConfiguration
-            .WriteTo.Async(write =>
-                write.Console(
-                    outputTemplate:
-                    "[{Timestamp:HH:mm:ss} {Level:u3}] {SourceContext}{NewLine}{Message:lj} " +
-                    "{Properties:j}{NewLine}{Exception}{NewLine}",
-                    theme: AnsiConsoleTheme.Literate));
-
-        return loggerConfiguration;
-    }
-
-    private static LoggerConfiguration WriteSplunk(
-        this LoggerConfiguration loggerConfiguration,
-        LoggingConfiguration optionsConfig)
-    {
-        loggerConfiguration
-            .WriteTo.EventCollector(optionsConfig.Splunk!.Host, optionsConfig.Splunk.Token,
-                index: optionsConfig.Splunk.Index);
 
         return loggerConfiguration;
     }
