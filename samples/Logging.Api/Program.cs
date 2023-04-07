@@ -1,4 +1,3 @@
-using JacksonVeroneze.NET.Logging.Configuration;
 using JacksonVeroneze.NET.Logging.Extensions;
 using Serilog;
 using Serilog.Events;
@@ -21,10 +20,6 @@ try
     {
         config.ApplicationName = "JacksonVeroneze.NET.Logging";
         config.ApplicationVersion = "1.0.0";
-        config.Console = new LogConfigurationConsole
-        {
-            IsEnable = true
-        };
     });
 
     var app = builder.Build();
