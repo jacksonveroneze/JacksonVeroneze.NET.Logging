@@ -1,12 +1,8 @@
 using JacksonVeroneze.NET.Logging.Extensions;
+using JacksonVeroneze.NET.Logging.Util;
 using Serilog;
-using Serilog.Events;
 
-Log.Logger = new LoggerConfiguration()
-    .MinimumLevel.Override("Microsoft", LogEventLevel.Information)
-    .Enrich.FromLogContext()
-    .WriteTo.Console()
-    .CreateBootstrapLogger();
+Log.Logger = BootstrapLogger.CreateLogger();
 
 try
 {
