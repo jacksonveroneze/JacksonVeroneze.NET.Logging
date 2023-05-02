@@ -5,7 +5,7 @@ on:
     types: [ opened, reopened, ready_for_review, edited ]
 
 env:
-  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+  GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
 
 jobs:
   assign:
@@ -13,4 +13,4 @@ jobs:
     steps:
       - uses: hkusu/review-assign-action@v1
         with:
-          assignees: ${{ github.actor }}
+          assignees: ${{github.actor}}
