@@ -3,7 +3,7 @@ using Serilog.Events;
 
 namespace JacksonVeroneze.NET.Logging.Util;
 
-public class BootstrapLogger
+public static class BootstrapLogger
 {
     public static ILogger CreateLogger()
     {
