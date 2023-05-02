@@ -10,18 +10,23 @@ indent_style = space
 insert_final_newline = false
 trim_trailing_whitespace = true
 
+# Xml files
 [*.xml]
 indent_size = 2
 
+# YML files
 [*.yml]
 indent_size = 2
 
+# YML files
 [*.csproj]
 indent_size = 2
 
+# JSON files
 [*.json]
 indent_size = 2
 
+# C# files
 [*.cs]
 
 #### Core EditorConfig Options ####

@@ -20,6 +20,14 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JacksonVeroneze.NET.Logging
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Logging.Api", "samples\Logging.Api\Logging.Api.csproj", "{CB64EC4E-29B1-4F68-A34C-FD7A2A28E75A}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "github", "github", "{76148604-5BBA-47E0-94F5-CE3437076F0A}"
+	ProjectSection(SolutionItems) = preProject
+		.github\workflows\run-commit-linter.yml = .github\workflows\run-commit-linter.yml
+		.github\workflows\run-create-package.yml = .github\workflows\run-create-package.yml
+		.github\workflows\run-pr-assign.yml = .github\workflows\run-pr-assign.yml
+		.github\workflows\run-unit-tests.yml = .github\workflows\run-unit-tests.yml
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -41,5 +49,6 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{3DD65E2E-72B3-4FE3-A69B-0A16E391B68C} = {01139357-8F5D-4F33-9CD8-1685F30737B3}
 		{CB64EC4E-29B1-4F68-A34C-FD7A2A28E75A} = {7E085D4F-B628-47A4-ACAC-F5530ABEE3C0}
+		{76148604-5BBA-47E0-94F5-CE3437076F0A} = {C6894A70-D8A0-4914-86D2-F0FBE51EF319}
 	EndGlobalSection
 EndGlobal
