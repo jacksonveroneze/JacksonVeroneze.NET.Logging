@@ -1,34 +1,34 @@
 <Project Sdk="Microsoft.NET.Sdk">
-  <PropertyGroup>
-    <TargetFramework>net7.0</TargetFramework>
-    <LangVersion>latest</LangVersion>
-    <ImplicitUsings>enable</ImplicitUsings>
-    <Nullable>enable</Nullable>
-    <PublishAot>true</PublishAot>
+    <PropertyGroup>
+        <TargetFramework>net7.0</TargetFramework>
+        <LangVersion>latest</LangVersion>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <PublishAot>true</PublishAot>
 
-    <OpenApiGenerateDocuments>false</OpenApiGenerateDocuments>
-    <PackageId>JacksonVeroneze.NET.Logging</PackageId>
-    <Version>1.0.0</Version>
-    <Authors>Jackson Veroneze</Authors>
-    <Company>jacksonveroneze</Company>
-    <PackageDescription>JacksonVeroneze.NET.Logging</PackageDescription>
-    <RepositoryUrl>https://github.com/jacksonveroneze/JacksonVeroneze.NET.Logging</RepositoryUrl>
-    <Title>JacksonVeroneze.NET.Logging</Title>
-    <Description>Pacote utilizado para Logging</Description>
-    <PackageProjectUrl>JacksonVeroneze.NET.Logging</PackageProjectUrl>
-    <PackageLicenseUrl>JacksonVeroneze.NET.Logging/blob/main/LICENSE</PackageLicenseUrl>
-    <Copyright>Jackson Veroneze</Copyright>
-  </PropertyGroup>
+        <OpenApiGenerateDocuments>false</OpenApiGenerateDocuments>
+        <PackageId>JacksonVeroneze.NET.Logging</PackageId>
+        <Version>1.0.0</Version>
+        <Authors>Jackson Veroneze</Authors>
+        <Company>jacksonveroneze</Company>
+        <PackageDescription>JacksonVeroneze.NET.Logging</PackageDescription>
+        <RepositoryUrl>https://github.com/jacksonveroneze/JacksonVeroneze.NET.Logging</RepositoryUrl>
+        <Title>JacksonVeroneze.NET.Logging</Title>
+        <Description>Pacote utilizado para Logging</Description>
+        <PackageProjectUrl>JacksonVeroneze.NET.Logging</PackageProjectUrl>
+        <PackageLicenseUrl>JacksonVeroneze.NET.Logging/blob/main/LICENSE</PackageLicenseUrl>
+        <Copyright>Jackson Veroneze</Copyright>
+    </PropertyGroup>
 
-  <ItemGroup>
-    <PackageReference Include="Serilog.AspNetCore" Version="6.1.0" />
-    <PackageReference Include="Serilog.Enrichers.CorrelationId" Version="3.0.1" />
-    <PackageReference Include="Serilog.Enrichers.Environment" Version="2.2.0" />
-    <PackageReference Include="Serilog.Enrichers.Span" Version="3.1.0" />
-    <PackageReference Include="Serilog.Exceptions" Version="8.4.0" />
-    <PackageReference Include="Serilog.Expressions" Version="3.4.1" />
-    <PackageReference Include="Serilog.Sinks.Async" Version="1.5.0" />
-    <PackageReference Include="Serilog.Sinks.Splunk" Version="3.7.0" />
-  </ItemGroup>
+    <ItemGroup>
+        <PackageReference Include="Serilog.AspNetCore" Version="7.0.0"/>
+        <PackageReference Include="Serilog.Enrichers.CorrelationId" Version="3.0.1"/>
+        <PackageReference Include="Serilog.Enrichers.Environment" Version="2.2.0"/>
+        <PackageReference Include="Serilog.Enrichers.Span" Version="3.1.0"/>
+        <PackageReference Include="Serilog.Exceptions" Version="8.4.0"/>
+        <PackageReference Include="Serilog.Expressions" Version="3.4.1"/>
+        <PackageReference Include="Serilog.Sinks.Async" Version="1.5.0"/>
+        <PackageReference Include="Serilog.Sinks.Splunk" Version="3.7.0"/>
+    </ItemGroup>
 
 </Project>

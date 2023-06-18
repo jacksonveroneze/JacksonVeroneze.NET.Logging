@@ -41,8 +41,8 @@ public static class RegisterServices
             .Enrich.WithEnvironmentUserName()
             .Enrich.WithCorrelationIdHeader()
             .Enrich.WithSpan()
-            .Enrich.WithProperty("ApplicationName", optionsConfig.ApplicationName)
-            .Enrich.WithProperty("ApplicationVersion", optionsConfig.ApplicationVersion);
+            .Enrich.WithProperty("ApplicationName", optionsConfig.ApplicationName!)
+            .Enrich.WithProperty("ApplicationVersion", optionsConfig.ApplicationVersion!);
 
         return loggerConfiguration;
     }

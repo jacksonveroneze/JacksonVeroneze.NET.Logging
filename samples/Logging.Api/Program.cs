@@ -15,7 +15,7 @@ try
     builder.Host.AddLogging(config =>
     {
         config.ApplicationName = "JacksonVeroneze.NET.Logging";
-        config.ApplicationVersion = "1.0.0";
+        config.ApplicationVersion = new Version("1.0.0");
     });
 
     var app = builder.Build();
